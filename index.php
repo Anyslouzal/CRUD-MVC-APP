@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>school panel</h1>
-    <a href="">add student</a>
-    <a href="">liste student</a>
+    <a href="controller/controller.php?cmd=creat">add student</a>
+    <a href="controller/controller.php?cmd=list">liste student</a>
 </body>
 </html>
