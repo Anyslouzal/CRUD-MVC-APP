@@ -15,7 +15,8 @@
             <th>old</th>
             <th>num</th>
             <th>email</th>
-            
+            <th>update</th>
+            <th>delete</th>
            </tr>
         </thead>
 
@@ -29,10 +30,12 @@ foreach($data as $row)
                  <td>".$row['old']."</td>
                  <td>".$row['num']."</td>
                  <td>".$row['email']."</td>
-               
+                 <td><a href='../modify.php?id=".$row['id']."&name=".$row['name']."&old=".$row['old']."&num=".$row['num']."&email=".$row['email']."'>update</a></td>
+                 <td><a href='../controller/controller.php?id=".$row['id']."'>delete</a></td>
                 </tr>"
 
                 ?>
+
                 </tbody>
 </body>
 </html>

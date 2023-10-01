@@ -32,4 +32,24 @@ if($cmd=="list"){
 
 }
 
+ if($cmd=="modify"){
+
+     $id= $_GET["id"];
+     $name= $_GET["name"];
+     $old=$_GET["old"];
+     $num=$_GET["num"];
+     $email=$_GET["email"];
+    
+    $model->update ($id,$name,$old,$num,$email);
+
+    header("Location : ../view/data.php");
+ }
+  if ($cmd=="delete"){
+    $id= $_GET["id"];
+
+    $model->delete($id);
+    header("Location : ../view/data.php");
+
+  }
+
 ?>
